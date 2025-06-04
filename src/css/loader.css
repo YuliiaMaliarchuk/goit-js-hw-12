@@ -1,0 +1,35 @@
+.loader {
+    display: none; 
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background-image:
+        linear-gradient(#808080 16px, transparent 0),
+        linear-gradient(#4e75ff 16px, transparent 0),
+        linear-gradient(#4e75ff 16px, transparent 0),
+        linear-gradient(#808080 16px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: left top, left bottom, right top, right bottom;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        width: 64px;
+        height: 64px;
+        transform: rotate(0deg)
+    }
+
+    50% {
+        width: 30px;
+        height: 30px;
+        transform: rotate(180deg)
+    }
+
+    100% {
+        width: 64px;
+        height: 64px;
+        transform: rotate(360deg)
+    }
+}
